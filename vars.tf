@@ -1,17 +1,17 @@
 variable "bucketname" {
-  default = ''
+  default = ""
 }
 
 variable "destFileName" {
-  default = ''
+  default = ""
 }
 
 variable "sourceFile" {
-  default = ''
+  default = ""
 }
 
 variable "kmsKeyId" {
-  default = ''
+  default = ""
 }
 
 variable "kmsEncrypt" {
