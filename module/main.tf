@@ -17,11 +17,9 @@ resource "aws_s3_bucket_object" "base64-object" {
   bucket         = "${var.bucket-name}"
   key            = "${var.bucket-key}"
   content_base64 = "${var.bucket-source}"
-
   etag             = "${md5(file("${var.bucket-source}"))}"
   website_redirect = "${var.website_redirect}"
   storage_class    = "${var.storage_class}"
   acl              = "${var.acl}"
-  etag             = "${md5(file("${var.bucket-source}"))}"
   cache_control    = "${var.cache-control}"
 }

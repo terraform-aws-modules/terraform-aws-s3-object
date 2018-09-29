@@ -4,7 +4,7 @@ variable "bucket-name" {}
 variable "bucket-key" {}
 
 variable "bucket-source" {
-  type = "list"
+  type = "string"
 }
 
 # Optional variables
