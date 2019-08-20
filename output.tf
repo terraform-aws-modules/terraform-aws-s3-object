@@ -9,4 +9,3 @@ output "s3_dest_file" {
 output "s3_source_file" {
   value = "${element(concat(aws_s3_bucket_object.object_with_kms_encryption.*.source, aws_s3_bucket_object.object_with_kms_encryption.*.source, list("")), 0)}"
 }
-
