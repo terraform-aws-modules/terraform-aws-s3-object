@@ -17,3 +17,12 @@ variable "kmsKeyId" {
 variable "kmsEncrypt" {
   default = false
 }
+
+variable "encrypt" {
+  default = false
+}
+
+variable "tags" {
+  type    = "map"
+  default = {}
+}
